@@ -39,7 +39,7 @@ else:
 
         data = {
             "city" : city,
-            "temp" : temp,
+            "temp" : f"{int(temp)}°C",
             "weather" : weather
         } 
         try:
@@ -56,3 +56,5 @@ else:
         with open("weather/weather.json", "w") as file:
             json.dump(history, file, indent=2)
 
+finally:
+    print("\nScript Finished")

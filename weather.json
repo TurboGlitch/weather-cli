@@ -1,17 +1,17 @@
 [
   {
-    "city": "Karachi",
-    "temp": 30.9,
-    "weather": "haze"
-  },
-  {
     "city": "London",
-    "temp": 28.78,
+    "temp": "27\u00b0C",
     "weather": "overcast clouds"
   },
   {
     "city": "Sydney",
-    "temp": 12.19,
-    "weather": "broken clouds"
+    "temp": "11\u00b0C",
+    "weather": "clear sky"
+  },
+  {
+    "city": "Auckland",
+    "temp": "16\u00b0C",
+    "weather": "overcast clouds"
   }
 ]
