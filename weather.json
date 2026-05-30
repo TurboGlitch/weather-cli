@@ -1,0 +1,17 @@
+[
+  {
+    "city": "Karachi",
+    "temp": 30.9,
+    "weather": "haze"
+  },
+  {
+    "city": "London",
+    "temp": 28.78,
+    "weather": "overcast clouds"
+  },
+  {
+    "city": "Sydney",
+    "temp": 12.19,
+    "weather": "broken clouds"
+  }
+]
