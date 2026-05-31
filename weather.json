@@ -13,5 +13,40 @@
     "city": "Auckland",
     "temp": "16\u00b0C",
     "weather": "overcast clouds"
+  },
+  {
+    "city": "Dubai",
+    "temp": "39\u00b0C",
+    "weather": "clear sky"
+  },
+  {
+    "city": "Edinburgh",
+    "temp": "14\u00b0C",
+    "weather": "broken clouds"
+  },
+  {
+    "city": "Rotorua",
+    "temp": "13\u00b0C",
+    "weather": "overcast clouds"
+  },
+  {
+    "city": "Canberra",
+    "temp": "7\u00b0C",
+    "weather": "clear sky"
+  },
+  {
+    "city": "Baku",
+    "temp": "22\u00b0C",
+    "weather": "clear sky"
+  },
+  {
+    "city": "Islamabad",
+    "temp": "34\u00b0C",
+    "weather": "clear sky"
+  },
+  {
+    "city": "Birmingham",
+    "temp": "20\u00b0C",
+    "weather": "scattered clouds"
   }
 ]

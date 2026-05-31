@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 import requests
 import json
-
+import csv
 
 load_dotenv()
 
@@ -28,7 +28,7 @@ else:
         city = ret["name"]
         temp = ret["main"]["temp"]
         feeltemp = ret["main"]["feels_like"]
-        weather = ret["weather"][0]["description"]
+        weather = (ret["weather"][0]["description"])
         humid = ret["main"]["humidity"]
 
         print(f"City: {city}")
@@ -55,6 +55,19 @@ else:
 
         with open("weather/weather.json", "w") as file:
             json.dump(history, file, indent=2)
+
+
+        file_exists = os.path.exists("weather/weather.csv")
+        
+        with open("weather/weather.csv", "a", newline="") as file:
+            writer = csv.writer(file)
+            if not file_exists:
+                writer.writerow(["City", "Temp", "Weather"])
+            writer.writerow([city, temp, weather])
+
+
+
+
 
 finally:
     print("\nScript Finished")
