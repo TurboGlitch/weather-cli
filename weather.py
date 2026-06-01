@@ -4,6 +4,15 @@ import requests
 import json
 import csv
 
+import logging
+
+logging.basicConfig(
+    filename = "weather/app.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+
+)
+
 load_dotenv()
 
 api_key = os.getenv("API_KEY")
@@ -16,12 +25,16 @@ try:
     r = requests.get(api_url)
 except requests.exceptions.ConnectionError:
     print("No connection")
+    logging.error("No connection")
 
 else:
 
     if r.status_code == 404:
         print("City not found, try again")
+        logging.warning("City not found")
     else:
+
+        logging.info("Script started")
 
         ret = (r.json())
         # print(ret)
@@ -66,7 +79,7 @@ else:
             writer.writerow([city, temp, weather])
 
 
-
+        logging.info("Data stored in files")
 
 
 finally:

@@ -48,5 +48,35 @@
     "city": "Birmingham",
     "temp": "20\u00b0C",
     "weather": "scattered clouds"
+  },
+  {
+    "city": "Lahore",
+    "temp": "27\u00b0C",
+    "weather": "smoke"
+  },
+  {
+    "city": "Toronto",
+    "temp": "14\u00b0C",
+    "weather": "scattered clouds"
+  },
+  {
+    "city": "Ottawa",
+    "temp": "14\u00b0C",
+    "weather": "few clouds"
+  },
+  {
+    "city": "Hello",
+    "temp": "37\u00b0C",
+    "weather": "overcast clouds"
+  },
+  {
+    "city": "\u00c1cs",
+    "temp": "22\u00b0C",
+    "weather": "broken clouds"
+  },
+  {
+    "city": "Colombo",
+    "temp": "29\u00b0C",
+    "weather": "overcast clouds"
   }
 ]
